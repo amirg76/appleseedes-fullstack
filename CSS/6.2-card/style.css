@@ -1,0 +1,21 @@
+.card {
+  width: 350px;
+  height: 450px;
+  background-color: bisque;
+}
+.img-card {
+  width: 350px;
+  height: 300px;
+}
+h2,
+h3 {
+  margin: 0;
+}
+.card-links {
+  padding-top: 10px;
+}
+a:link {
+  color: rgb(125, 133, 18);
+  text-decoration: underline;
+  padding-right: 5px;
+}
