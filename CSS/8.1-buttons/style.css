@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(38, 38, 124);
+}
+
+.container {
+  margin: 0% 40%;
+  text-align: center;
+}
+.prop {
+  width: 600px;
+  height: 200px;
+  /* border: 1px solid; */
+}
+h1 {
+  color: #fff;
+}
+button {
+  margin: 20px;
+}
+.register_f {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: limegreen;
+  font-size: 25px;
+  border: none;
+}
+.register_f:hover {
+  background-color: rgb(57, 172, 57);
+}
+.clear_f {
+  padding: 8px 35px;
+  color: #fff;
+  background-color: red;
+  font-size: 20px;
+  border: none;
+}
+.clear_f:hover {
+  background-color: #c73232;
+  border: 2px solid black;
+}
+.submit_f {
+  padding: 5px 30px;
+  color: #fff;
+  background-color: dodgerblue;
+  font-size: 18px;
+  border: none;
+}
+.submit_f:hover {
+  background-color: rgb(28, 125, 221);
+}
+.register_r {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: chocolate;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+}
+.register_r:hover {
+  background-color: rgb(187, 93, 26);
+}
+.clear_r {
+  padding: 8px 35px;
+  color: #fff;
+  background-color: gold;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+}
+.clear_r:hover {
+  background-color: rgb(218, 191, 42);
+}
+.submit_r {
+  padding: 5px 30px;
+  color: #fff;
+  background-color: gray;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+}
+.submit_r:hover {
+  background-color: rgb(116, 113, 113);
+}
+.register_fg {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 25px;
+  border: 3px solid rgb(0, 128, 21);
+}
+.register_fg:hover {
+  background-color: rgb(91, 209, 91);
+  border-color: rgb(91, 209, 91);
+}
+.clear_fg {
+  padding: 8px 35px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 20px;
+  border: 3px solid red;
+}
+.clear_fg:hover {
+  background-color: red;
+}
+.submit_fg {
+  padding: 5px 30px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 18px;
+  border: 3px solid dodgerblue;
+}
+.submit_fg:hover {
+  background-color: dodgerblue;
+}
+.register_rg {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 25px;
+  border: 3px solid rgb(170, 98, 4);
+  border-radius: 50px;
+}
+.register_rg:hover {
+  background-color: rgb(170, 98, 4);
+}
+.clear_rg {
+  padding: 8px 35px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 20px;
+  border: 3px solid rgb(221, 168, 34);
+  border-radius: 50px;
+}
+.clear_rg:hover {
+  background-color: rgb(221, 168, 34);
+}
+.submit_rg {
+  padding: 5px 30px;
+  color: #fff;
+  background-color: rgb(38, 38, 124);
+  font-size: 18px;
+  border: 3px solid gray;
+  border-radius: 50px;
+}
+.submit_rg:hover {
+  background-color: gray;
+}
