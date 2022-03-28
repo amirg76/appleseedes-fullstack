@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+/* normalize.css set defult to 0.67em */
+h1 {
+  margin: 0;
+}
+p {
+  margin: 10px 0;
+}
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.text-primary {
+  color: #4b3999;
+}
+.lead {
+  font-size: 22px;
+  font-weight: 700;
+  background-color: rgb(241, 239, 239);
+  padding-top: 20px;
+  opacity: 0.7;
+}
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background: #4b3999;
+  padding: 5px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn.btn:hover {
+  background: #372a6d;
+  color: rgb(165, 172, 233);
+}
+
+/* Showcase */
+#showcase {
+  background: url("sleeping.jpg") no-repeat center center/cover;
+  height: 700px;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 100px;
+}
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Features */
+#features1 {
+  position: absolute;
+  background-color: rgb(241, 239, 239);
+  margin-top: -250px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i {
+  margin-bottom: 10px;
+}
+.unvisable {
+  visibility: hidden;
+}

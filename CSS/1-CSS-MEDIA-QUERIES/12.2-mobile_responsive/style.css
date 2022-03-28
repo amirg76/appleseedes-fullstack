@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 200px;
+}
+.box {
+  width: 350px;
+  height: 200px;
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .box {
+    display: block;
+    margin-bottom: 5%;
+  }
+}
