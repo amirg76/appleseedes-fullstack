@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 200px 500px;
+  font-size: 20px;
+}
+a::after {
+  content: attr(href);
+  color: rgb(139, 74, 177);
+}
+.text {
+  color: rgb(139, 74, 177);
+}

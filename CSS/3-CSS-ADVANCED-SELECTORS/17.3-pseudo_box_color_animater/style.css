@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  position: relative;
+  margin: 300px 500px;
+  width: 300px;
+  height: 300px;
+  background-color: purple;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+}
+
+.box:hover.box {
+  background-color: blue;
+}
