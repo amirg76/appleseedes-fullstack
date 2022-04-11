@@ -5,6 +5,7 @@ const numberArray = Array.from({ length: 100 }, (_, index) => index + 1);
 console.log(numberArray);
 ///////////////////
 let convertObj = Object.values(fillArray);
+
 console.log(convertObj);
 ///////////////////
 let arrayToObj = { ...[...fillArray] };
