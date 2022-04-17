@@ -18,14 +18,11 @@ const candyStore = {
 
 // 1.
 function getCandy(candyStore, id) {
-  //your code
   const asArray = Object.entries(candyStore);
-  // console.log(asArray);
-  // const filtered = asArray.filter((candy) => console.log(candy));
-  const test = asArray.find((x) => console.log(x[0]));
-  console.log(test);
-  // const justStrings = Object.fromEntries(filtered);
-  // return justStrings;
+  const firstArr = Object.values(asArray[0][1]);
+  const justStrings = firstArr.find((x) => x.id === id);
+
+  return justStrings;
 }
-const candyWithId = getCandy(candyStore, "5hd7y");
+const candyWithId = getCandy(candyStore, "as12f");
 console.log(candyWithId);
