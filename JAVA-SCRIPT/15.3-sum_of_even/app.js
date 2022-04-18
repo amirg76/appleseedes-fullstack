@@ -1,0 +1,20 @@
+// function getSumOfEven(arr){
+//   return arr[2] + arr[4] + arr[6] + arr[8] + arr[10];
+//  }
+//  getSumOfEven([1,2,3,4,5,6,7,8,9,10]);
+
+// 1.
+// line 2
+
+// 2.
+//vscode debugger
+
+// 3.
+//return value:Nan becouse arr length is 10
+// so the last arr index need to be 9
+
+// 4.
+function getSumOfEven(arr) {
+  return arr[1] + arr[3] + arr[5] + arr[7] + arr[9];
+}
+const sumEven = getSumOfEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
