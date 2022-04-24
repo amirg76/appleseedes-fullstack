@@ -43,5 +43,5 @@ for (i = 0; i < 3; i++) {
   setTimeout(log, 100);
 }
 
-//result 3 -console.log :3 run last console.log becouse the loop end /  before function log finish becouse timeout of 1ms
+//result 3 -console.log :3  times run console.log with i=3 becouse the loop end / and   before function log start becouse timeout of 1ms and the loop wont wait
 /////////////////////////////////////////

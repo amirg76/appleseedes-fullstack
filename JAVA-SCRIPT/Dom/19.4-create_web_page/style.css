@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: rgb(112, 123, 223);
+
+  padding: 20px;
+}
+ul li {
+  list-style: none;
+  padding: 0 30px;
+  display: inline-block;
+  font-size: 20px;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 50px;
+}
+h1 {
+  text-decoration: underline;
+  color: rgb(120, 126, 219);
+  font-size: 55px;
+}
+.welcome-content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto;
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+}
+.welcome-content h4 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.welcome-content_main_text {
+  background-color: rgb(149, 154, 221);
+  height: 200px;
+  border-radius: 25px;
+  padding: 30px 10px;
+}
+.welcome-content_secondery_text {
+  margin: 100px 0;
+  background-color: rgb(149, 154, 221);
+  padding: 30px 80% 0 10px;
+  height: 600px;
+  border-radius: 25px;
+  line-height: 2;
+}
+
+.grid_items {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.grid_item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid #333;
+}
+@media (min-width: 500px) and (max-width: 1200px) {
+  .welcome-content_secondery_text {
+    margin-top: 100px;
+    background-color: rgb(149, 154, 221);
+    padding: 30px 40% 0 10%;
+    height: 60vh;
+    border-radius: 25px;
+    line-height: 2;
+  }
+}
+@media (max-width: 500px) {
+  /*  Nav Bar */
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+  ul li {
+    display: block;
+    padding: 10px;
+  }
+  ul li a {
+    display: block;
+    background-color: rgb(36, 36, 124);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* Welcome Section */
+  #welcome h1 {
+    width: 50%;
+    text-align: center;
+  }
+  .welcome-content {
+    width: 100%;
+  }
+  .welcome-content_secondery_text {
+    margin-top: 100px;
+    background-color: rgb(149, 154, 221);
+    padding: 30px 20% 30px 10%;
+    height: 70vh;
+    border-radius: 25px;
+    line-height: 2;
+  }
+  /* GRID SECTION */
+  .grid_items {
+    width: 100%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+  }
+
+  .grid_item {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border: 2px solid #333;
+  }
+}
