@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.increaseText {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 500px;
+}
+button {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background-color: blue;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 100px;
+}
+input {
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+p {
+  text-align: center;
+}
+.inc {
+  background-color: blue;
+}
+.dec {
+  background-color: red;
+}
