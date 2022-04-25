@@ -1,9 +1,9 @@
 const incBtn = document.querySelector(".inc");
 const decBtn = document.querySelector(".dec");
+const paragraph = document.querySelector("p");
+const currentStyle = getComputedStyle(paragraph);
 
 incBtn.addEventListener("click", function () {
-  const paragraph = document.querySelector("p");
-  const currentStyle = getComputedStyle(paragraph);
   let integer = parseInt(currentStyle.fontSize, 10);
 
   if (integer < 100) {
@@ -14,8 +14,6 @@ incBtn.addEventListener("click", function () {
 });
 
 decBtn.addEventListener("click", function () {
-  const paragraph = document.querySelector("p");
-  const currentStyle = getComputedStyle(paragraph);
   let integer = parseInt(currentStyle.fontSize, 10);
 
   if (integer > 6) {
