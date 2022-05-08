@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+}
+.mainGrid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+.mainGrid div {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+}
+.tetromino {
+  background-color: blue;
+}
