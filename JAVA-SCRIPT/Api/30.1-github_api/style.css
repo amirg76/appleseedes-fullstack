@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5vh;
+  width: 100vw;
+  height: 80vh;
+}
+
+button {
+  margin-top: 5vh;
+  background-color: aqua;
+}
+.gitHubBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  height: 100vh;
+  margin: 0 1rem;
+}
+
+.avatarImg,
+.box {
+  width: 30rem;
+  height: 30rem;
+  margin: 3rem;
+}
+.userName,
+.numRepo {
+  font-size: 2rem;
+}
