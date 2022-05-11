@@ -33,13 +33,26 @@ button {
   margin: 0 1rem;
 }
 
-.avatarImg,
-.box {
-  width: 30rem;
+.avatarImg {
+  width: 45rem;
   height: 30rem;
+  margin: 1rem;
+  border-bottom: 1px solid black;
+}
+.box {
   margin: 3rem;
+  width: 50rem;
+  height: 50rem;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: rgb(241, 234, 234);
 }
 .userName,
 .numRepo {
+  margin-top: 2rem;
   font-size: 2rem;
+  text-align: center;
+}
+.error {
+  margin-top: 2rem;
 }

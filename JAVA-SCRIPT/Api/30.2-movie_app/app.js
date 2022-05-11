@@ -1,81 +1,121 @@
-const avatarImg = document.querySelector(".avatarImg");
-const name = document.querySelector(".userName");
+const ratings = document.querySelector(".ratings");
 
-const numRepo = document.querySelector(".numRepo");
 const btn = document.querySelector("button");
 
-// const joke = fetch("https://api.jokes.one/jod")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     btn.addEventListener("click", function () {
-//       title.innerText = data.contents.jokes[0].joke.title;
-//       content.innerText = data.contents.jokes[0].joke.text;
-//     });
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
-
-async function gitHubProfile(userName) {
+async function searchMovie(movieName) {
   try {
-    const response = await fetch(`https://api.github.com/users/${userName}`);
-    const data = await response.json();
-    console.log(data);
-    const box = createNewDiv(data);
+    console.log(movieName);
+    const response = await fetch(
+      `http://www.omdbapi.com/?i=tt3896198&apikey=cce9a70e&t=${movieName}`
+    );
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      const box = createNewDiv(data);
+      buildMoviePoster(box, data);
+      buildMovieTitle(box, data);
+      buildGenre(box, data);
+      buildYear(box, data);
+      buildPlot(box, data);
+      buildDirector(box, data);
+      buildActors(box, data);
+      buildImdb(box, data);
+      buildTomatoes(box, data);
+      buildMetacritic(box, data);
 
-    // box.setAttribute("url-data", data.html_url);
-
-    const avatarImg = box.querySelector(".avatarImg");
-    const name = box.querySelector(".userName");
-    const numRepo = box.querySelector(".numRepo");
-    console.log(numRepo);
-
-    avatarImg.style.backgroundImage = `url('https://avatars.githubusercontent.com/u/${data.id}?v=4.png')`;
-    avatarImg.style.postion = "no-repeat center center/cover";
-    name.innerText = "My name:   " + data.name;
-    numRepo.innerText = "My repo's:  " + data.public_repos;
-    const gitHubBox = document.querySelector(".gitHubBox");
-    gitHubBox.addEventListener("click", function (e) {
-      console.log(e.target);
-      // const gitHubLink = data.html_url;
-      const gitHubLink = e.target.getAttribute("url-data");
-      console.log(gitHubLink);
-    });
+      function buildMoviePoster(box, data) {
+        const moviePoster = document.querySelector(".moviePoster");
+        moviePoster.style.backgroundImage = `url("${data.Poster}")`;
+        // moviePoster.style.postion = "no-repeat center center/cover";
+      }
+      function buildMovieTitle(box, data) {
+        const movieTitle = document.querySelector(".movieTitle");
+        movieTitle.innerText = data.Title;
+      }
+      function buildGenre(box, data) {
+        const genre = document.querySelector(".genre");
+        genre.innerText = `Genre: ${data.Genre}`;
+      }
+      function buildYear(box, data) {
+        const year = document.querySelector(".year");
+        year.innerText = `Year: ${data.Year}`;
+      }
+      function buildPlot(box, data) {
+        const plot = document.querySelector(".plot");
+        plot.innerText = `Plot:  ${data.Plot}`;
+      }
+      function buildDirector(box, data) {
+        const director = document.querySelector(".director");
+        director.innerText = `Director: ${data.Director}`;
+      }
+      function buildActors(box, data) {
+        const actors = document.querySelector(".actors");
+        actors.innerText = `Actors: ${data.Actors}`;
+      }
+      function buildImdb(box, data) {
+        const imdb = document.querySelector(".imdb");
+        imdb.innerText = `Imdb Ratings: ${data.Ratings[0].Value}`;
+      }
+      function buildTomatoes(box, data) {
+        const tomatoes = document.querySelector(".tomatoes");
+        tomatoes.innerText = `Tomatoes Ratings: ${data.Ratings[1].Value}`;
+      }
+      function buildMetacritic(box, data) {
+        const Metacritic = document.querySelector(".metacritic");
+        Metacritic.innerText = `Metacritic Ratings: ${data.Ratings[2].Value}`;
+      }
+    }
   } catch (error) {
     console.log(error);
   }
 }
 function createNewDiv(data) {
-  const gitHubBox = document.querySelector(".gitHubBox");
+  const movieBox = document.querySelector(".movieBox");
   const box = document.createElement("div");
   box.classList.add("box");
   const att = document.createAttribute("url-data");
   att.value = data.html_url;
   box.setAttributeNode(att);
-  gitHubBox.appendChild(box);
-  const avatarImg = document.createElement("div");
-  avatarImg.classList.add("avatarImg");
-  box.appendChild(avatarImg);
-  const userName = document.createElement("div");
-  userName.classList.add("userName");
-  box.appendChild(userName);
-  const numRepo = document.createElement("div");
-  numRepo.classList.add("numRepo");
-  box.appendChild(numRepo);
+  movieBox.appendChild(box);
+  const moviePoster = document.createElement("div");
+  moviePoster.classList.add("moviePoster");
+  box.appendChild(moviePoster);
+  const movieTitle = document.createElement("div");
+  movieTitle.classList.add("movieTitle");
+  box.appendChild(movieTitle);
+  const genre = document.createElement("div");
+  genre.classList.add("genre");
+  box.appendChild(genre);
+  const year = document.createElement("div");
+  year.classList.add("year");
+  box.appendChild(year);
+  const plot = document.createElement("div");
+  plot.classList.add("plot");
+  box.appendChild(plot);
+  const director = document.createElement("div");
+  director.classList.add("director");
+  box.appendChild(director);
+  const actors = document.createElement("div");
+  actors.classList.add("actors");
+  box.appendChild(actors);
+  const imdb = document.createElement("div");
+  imdb.classList.add("imdb");
+  box.appendChild(imdb);
+  const tomatoes = document.createElement("div");
+  tomatoes.classList.add("tomatoes");
+  box.appendChild(tomatoes);
+  const metacritic = document.createElement("div");
+  metacritic.classList.add("metacritic");
+  box.appendChild(metacritic);
+
   return box;
 }
 
-function checkUser() {
+function checkMovie() {
   btn.addEventListener("click", function () {
     const input = document.querySelector("input");
-    gitHubProfile(input.value);
+    searchMovie(input.value);
   });
 }
 
-// function goUserGitHuB(e) {
-//   console.log(e.target);
-// }
-
-checkUser();
+checkMovie();
