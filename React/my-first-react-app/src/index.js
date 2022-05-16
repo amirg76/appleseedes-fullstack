@@ -10,6 +10,16 @@ import Ex_3_1 from "./exercise/Ex_3_1";
 import Ex_3_2 from "./exercise/Ex_3_2";
 import * as allQuiz from "./exercise/Ex_3_2";
 
+const styleTitle = {
+  width: 450,
+  height: 200,
+  marginTop: 200,
+  border: "1px solid black",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  padding: 10,
+};
 const title = ReactDOM.createRoot(document.querySelector("title"));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,12 +27,14 @@ root.render(
   <React.StrictMode>
     {/* <Ex_2_2 /> */}
     {/* <Ex_3_1 /> */}
-    <allQuiz.Ex_3_2_quiz />
-    <allQuiz.Ex_3_2_quizTitle />
-    <allQuiz.Ex_3_2_q1 />
-    <allQuiz.Ex_3_2_q1Input />
-    <allQuiz.Ex_3_2_q2Title />
-    <allQuiz.default />
+    <title style={styleTitle}>
+      {/* <allQuiz.Ex_3_2_quiz /> */}
+      <allQuiz.Ex_3_2_quizTitle />
+      <allQuiz.Ex_3_2_q1 />
+      <allQuiz.Ex_3_2_q1Input />
+      <allQuiz.Ex_3_2_q2Title />
+      <allQuiz.default />
+    </title>
   </React.StrictMode>
 );
 
