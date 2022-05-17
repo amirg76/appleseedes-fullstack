@@ -60,13 +60,16 @@ export class Decrement extends React.Component {
     this.state = { sum: 0 };
   }
 
-  increase = () => {
-    this.setState({ sum: this.state.sum + 1 });
-  };
+  onChangeCounter() {
+    this.props.changeCounter(this.state.counter);
+  }
   render() {
     return (
       <span>
-        <button style={{ margin: "20px" }} onClick={this.increase}>
+        <button
+          style={{ margin: "20px" }}
+          onClick={this.onChangeCounter.bind(this)}
+        >
           Decrement{" "}
         </button>
       </span>

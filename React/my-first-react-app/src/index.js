@@ -19,6 +19,10 @@ import * as Ex_6_1 from "./exercise/Ex_6_1";
 import * as Ex_7_1 from "./exercise/Ex_7_1";
 import * as Ex_7_2 from "./exercise/Ex_7_2";
 import * as Ex_7_3 from "./exercise/Ex_7_3";
+import * as Ex_8_1 from "./exercise/Ex_8_1";
+import * as Ex_8_2 from "./exercise/Ex_8_2";
+import * as Ex_8_3 from "./exercise/Ex_8_3";
+import * as Ex_9_1 from "./exercise/Ex_9_1";
 
 const styleTitle = {
   width: 450,
@@ -139,13 +143,27 @@ root.render(
       <Ex_7_2.ShowHide />
     </Ex_7_2.default> */}
 
-    <App />
+    {/* <App /> */}
     {/* <Ex_7_3.default>
       <Ex_7_3.Increment />
       <Ex_7_3.Labelsum />
       <Ex_7_3.Decrement />
     </Ex_7_3.default> */}
     {/* ---------------------------------- */}
+
+    {/* <Ex_8_1.default>
+      <Ex_8_1.Color />
+    </Ex_8_1.default> */}
+    {/* ------------------------------------- */}
+    {/* <Ex_8_2.default /> */}
+    {/* ---------------------------------- */}
+    {/* <Ex_8_3.default>
+      <Ex_8_3.boxColor />
+    </Ex_8_3.default> */}
+    {/* ----------------------------------------------- */}
+    <Ex_9_1.default>
+      <Ex_9_1.boxColor />
+    </Ex_9_1.default>
   </React.StrictMode>
 );
 

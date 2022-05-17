@@ -1,0 +1,26 @@
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.inner-box {
+  /* width: 0px; */
+  margin-top: 1rem;
+  height: 200px;
+  background-color: lightblue;
+}
+.myLabel {
+  font-size: 25px;
+  font-weight: bold;
+}
+.black {
+  color: black;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}

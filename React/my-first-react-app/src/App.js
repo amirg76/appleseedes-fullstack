@@ -31,7 +31,12 @@ class App extends React.Component {
   // }
 
   render() {
-    return <Ex_7_3.Labelsum counter={this.state.counter} />;
+    return;
+    <Ex_7_3.default>
+      <Ex_7_3.Increment changeCounter={this.onChangeCounter.bind(this)} />
+      <Ex_7_3.Labelsum counter={this.state.counter} />
+      <Ex_7_3.Decrement changeCounter={this.onChangeCounter.bind(this)} />
+    </Ex_7_3.default>;
   }
   // render() {
   //   return <Header />;

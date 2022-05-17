@@ -71,3 +71,202 @@
 .hidden {
   display: none;
 }
+#color {
+  font-size: 2rem;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  top: 0;
+}
+.box2 {
+  width: 200px;
+  height: 100px;
+  top: 110px;
+}
+.box3 {
+  width: 50px;
+  height: 50px;
+  top: 220px;
+}
+
+.begin {
+  /* left: -100px; */
+  display: none;
+}
+.beginMove {
+  background-color: purple;
+  position: absolute;
+  left: 0;
+  display: block;
+  animation-name: boxMove;
+  animation-duration: 1s;
+  left: 10px;
+}
+
+@keyframes boxMove {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.boxcolor {
+  width: 200px;
+  height: 200px;
+}
+.boxPurple {
+  background-color: purple;
+}
+.boxYellow {
+  background-color: yellow;
+}
+.boxBlue {
+  background-color: blue;
+}
+.boxRed {
+  background-color: red;
+}
+.boxGreen {
+  background-color: green;
+}
+.boxCircle {
+  border-radius: 50%;
+  background-color: blue;
+}
+
+/* spinners */
+/* spinner1 + 2 */
+.spinner,
+.spinner2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.spinner div,
+.spinner2 div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid transparent;
+  border-top-color: #187920;
+  border-radius: 50%;
+  animation: spinnerOne 0.6s linear infinite;
+}
+.spinner2 div {
+  border-top-color: #8cf395;
+}
+
+.spinner div:nth-child(2) {
+  border: 8px solid transparent;
+  border-bottom-color: #187920;
+  animation: spinnerTwo 0.6s linear infinite;
+}
+
+.spinner div:nth-child(3) {
+  border: 8px solid transparent;
+  border-left-color: #187920;
+  animation: spinnerThree 0.6s linear infinite;
+}
+
+.spinner div:nth-child(4) {
+  border: 8px solid transparent;
+  border-right-color: #8cf395;
+  animation: spinnerforth 0.6s linear infinite;
+}
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0deg);
+    border-width: 5px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
+  }
+}
+@keyframes spinnerTwo {
+  0% {
+    transform: rotate(0deg);
+    border-width: 5px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
+  }
+}
+@keyframes spinnerThree {
+  0% {
+    transform: rotate(0deg);
+    border-width: 5px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
+  }
+}
+@keyframes spinnerforth {
+  0% {
+    transform: rotate(0deg);
+    border-width: 5px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
+  }
+}
+
+/* bouncing balls */
+
+/* bouncing balls */
+.bouncer2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100px;
+  height: 100px;
+}
+.bouncer2 div {
+  width: 20px;
+  height: 20px;
+  background: #0077ff;
+  border-radius: 50%;
+  animation: bouncer2 0.8s cubic-bezier(1, 0.57, 0.3, 0.98) infinite alternate;
+}
+.bouncer2 div:nth-child(2) {
+  animation-delay: 0.3s;
+  opacity: 0.8;
+}
+.bouncer2 div:nth-child(3) {
+  animation-delay: 0.6s;
+  opacity: 1.2;
+}
+
+@keyframes bouncer2 {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* spinners  end*/
