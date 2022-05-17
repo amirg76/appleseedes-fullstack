@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
+import * as Ex_7_3 from "./exercise/Ex_7_3";
 
 // React.createElement("a", {
 //   className: "",
@@ -16,6 +17,13 @@ import React from "react";
 class App extends React.Component {
   constructor() {
     super();
+    this.state = {
+      counter: 0,
+    };
+  }
+
+  onChangeCounter(newCounter) {
+    this.setState({ counter: newCounter });
   }
   //   render() {
   //     return <div className="">Hello World From App Compement</div>;
@@ -23,8 +31,11 @@ class App extends React.Component {
   // }
 
   render() {
-    return <Header />;
+    return <Ex_7_3.Labelsum counter={this.state.counter} />;
   }
+  // render() {
+  //   return <Header />;
+  // }
 }
 
 // class Header extends React.Component {

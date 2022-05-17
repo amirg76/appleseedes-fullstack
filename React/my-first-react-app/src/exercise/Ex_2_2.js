@@ -21,3 +21,5 @@ const Ex_2_2 = () => {
   );
 };
 export default Ex_2_2;
+
+// import sky from "./sky.jpg";
