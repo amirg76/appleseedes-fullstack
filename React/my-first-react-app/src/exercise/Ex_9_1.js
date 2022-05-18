@@ -37,7 +37,6 @@ export class boxColor extends React.Component {
         counter: this.state.counter + 1,
       };
     });
-    clearInterval();
   };
 
   componentDidMount() {

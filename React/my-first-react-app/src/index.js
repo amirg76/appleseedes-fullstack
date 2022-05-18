@@ -23,6 +23,9 @@ import * as Ex_8_1 from "./exercise/Ex_8_1";
 import * as Ex_8_2 from "./exercise/Ex_8_2";
 import * as Ex_8_3 from "./exercise/Ex_8_3";
 import * as Ex_9_1 from "./exercise/Ex_9_1";
+import * as Ex_11_1 from "./exercise/Ex_11_1";
+import * as Ex_11_2 from "./exercise/Ex_11_2";
+import * as Ex_11_3 from "./exercise/Ex_11_3";
 
 const styleTitle = {
   width: 450,
@@ -161,9 +164,11 @@ root.render(
       <Ex_8_3.boxColor />
     </Ex_8_3.default> */}
     {/* ----------------------------------------------- */}
-    <Ex_9_1.default>
-      <Ex_9_1.boxColor />
-    </Ex_9_1.default>
+    {/* <Ex_11_1.default /> */}
+    {/* -------------------------------------- */}
+    {/* <Ex_11_2.default /> */}
+    {/* ------------------------------------------- */}
+    <Ex_11_3.default />
   </React.StrictMode>
 );
 

@@ -270,3 +270,17 @@
 }
 
 /* spinners  end*/
+
+.colorButton {
+  width: 100px;
+  height: 50px;
+  margin: 2vh;
+  font-size: 1.2vw;
+}
+.inputForm {
+  margin: 1vh;
+}
+.textAreaForm {
+  margin: 1vw 0 0 1vw;
+  height: 15vh;
+}
