@@ -12,12 +12,14 @@ const styleMain = {
   alignItems: "flex-start",
   padding: 10,
 };
+
 const styleForm = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
 };
+
 const textErea = {
   margin: "1px",
   height: 5,

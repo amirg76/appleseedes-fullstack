@@ -71,6 +71,9 @@
 .hidden {
   display: none;
 }
+.active {
+  display: block;
+}
 #color {
   font-size: 2rem;
 }
@@ -283,4 +286,51 @@
 .textAreaForm {
   margin: 1vw 0 0 1vw;
   height: 15vh;
+}
+.joke {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jokeContent {
+  width: 20vw;
+}
+.jokeBtn {
+  width: 10vw;
+}
+.catJokeBtn {
+  width: 5vw;
+}
+.JokeContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.jokeCat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.jokeCat > h3 {
+  margin: 0;
+}
+.avataCard {
+  width: 20vw;
+  height: 10vh;
+  border: 1px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin: 1vw;
+}
+.avatarImg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: cover;
 }

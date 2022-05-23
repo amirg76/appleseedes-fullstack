@@ -26,6 +26,9 @@ import * as Ex_9_1 from "./exercise/Ex_9_1";
 import * as Ex_11_1 from "./exercise/Ex_11_1";
 import * as Ex_11_2 from "./exercise/Ex_11_2";
 import * as Ex_11_3 from "./exercise/Ex_11_3";
+import * as Ex_12_1 from "./exercise/Ex_12_1";
+import * as Ex_13_1 from "./exercise/Ex_13_1";
+import * as React_Data_Massaging from "./exercise/React_Data_Massaging";
 
 const styleTitle = {
   width: 450,
@@ -168,7 +171,13 @@ root.render(
     {/* -------------------------------------- */}
     {/* <Ex_11_2.default /> */}
     {/* ------------------------------------------- */}
-    <Ex_11_3.default />
+    {/* <Ex_11_3.default /> */}
+    {/* ------------------------- */}
+    {/* <Ex_12_1.default /> */}
+    {/* ----------------------- */}
+    {/* <Ex_13_1.default /> */}
+    {/* ----------------------- */}
+    <React_Data_Massaging.default />
   </React.StrictMode>
 );
 
