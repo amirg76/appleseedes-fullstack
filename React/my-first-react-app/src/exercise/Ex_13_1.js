@@ -7,7 +7,7 @@ const styleMain = {
   // marginTop: 200,
   border: "1px solid black",
   display: "flex",
-  flexDirection: "column",
+  // flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   flexWrap: "wrap",
@@ -33,7 +33,7 @@ export class RandomAvatar extends React.Component {
     const avatarArr = await this.getAvatarData();
     const sortAvatar = avatarArr.map((element) => {
       return {
-        picture: element.picture.thumbnail,
+        picture: element.picture.large,
         firstName: element.name.first,
         lastName: element.name.last,
         cell: element.cell,
@@ -62,7 +62,7 @@ export class RandomAvatar extends React.Component {
   render() {
     return (
       <>
-        <input onKeyPress={this.handleInput}></input>
+        <input onChange={this.handleInput}></input>
         <button>Filter</button>
         <RenderAvatar arrToRender={this.state.avatarArr} />
       </>

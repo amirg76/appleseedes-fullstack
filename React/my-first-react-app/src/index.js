@@ -29,17 +29,9 @@ import * as Ex_11_3 from "./exercise/Ex_11_3";
 import * as Ex_12_1 from "./exercise/Ex_12_1";
 import * as Ex_13_1 from "./exercise/Ex_13_1";
 import * as React_Data_Massaging from "./exercise/React_Data_Massaging";
+import * as Ex_14_1 from "./exercise/Ex_14_1";
+import * as Ex_14_2 from "./exercise/Ex_14_2";
 
-const styleTitle = {
-  width: 450,
-  height: 200,
-  marginTop: 200,
-  border: "1px solid black",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "flex-start",
-  padding: 10,
-};
 const styleMain = {
   width: 450,
   height: 200,
@@ -51,11 +43,6 @@ const styleMain = {
   alignItems: "center",
   padding: 10,
 };
-const ex_4_1_btn_bold = {
-  fontWeight: "bold",
-};
-
-const title = ReactDOM.createRoot(document.querySelector("title"));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -175,15 +162,13 @@ root.render(
     {/* ------------------------- */}
     {/* <Ex_12_1.default /> */}
     {/* ----------------------- */}
-    {/* <Ex_13_1.default /> */}
+    <Ex_13_1.default />
     {/* ----------------------- */}
-    <React_Data_Massaging.default />
-  </React.StrictMode>
-);
-
-title.render(
-  <React.StrictMode>
-    <Ex_2_1 />
+    {/* <React_Data_Massaging.default /> */}
+    {/*----------------------- */}
+    {/* <Ex_14_1.default /> */}
+    {/* -------------------------------- */}
+    {/* <Ex_14_2.default /> */}
   </React.StrictMode>
 );
 

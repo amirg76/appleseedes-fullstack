@@ -67,6 +67,11 @@
   margin: 1vw;
   color: orange;
 }
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hidden {
   display: none;
@@ -321,16 +326,10 @@
 }
 .avataCard {
   width: 20vw;
-  height: 10vh;
+  height: 50vh;
   border: 1px solid black;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
-  margin: 1vw;
-}
-.avatarImg {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  object-fit: cover;
+  margin: 5vw;
 }
