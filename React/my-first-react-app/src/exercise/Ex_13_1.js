@@ -106,3 +106,21 @@ class Ex_13_1 extends React.Component {
   }
 }
 export default Ex_13_1;
+
+// function MappingAvatars({avatarArr,userInput})
+// const filterAvatars = () => {
+//   return avatarArr.filter((avatar) => {
+//     const fullName = (avatar.firstName + avatar.lastName).toLowerCase();
+//     return fullName.includes(userInputs.toLowerCase());
+//   });
+// };
+
+// const inserAvatars=()=>{
+//   const filteredAvatars=filteredAvatars();
+//   return filteredAvatars.map((avatar)=>{
+//     <Avatar key={avatar.id} imgurl={avatar.img} firstName={avatar.firstName} lastName={avatar.lastName}
+//     />
+//   ));
+// };
+// // return <>{insertAvatars()}</>
+// }

@@ -44,6 +44,17 @@
 .ex_4_1_btn_bold {
   font-weight: bold;
 }
+.styleMain {
+  width: 100vw;
+  height: 50vh;
+  /* marginTop: 200, */
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* padding: 10, */
+}
 .card {
   width: 350px;
   height: 400px;
@@ -332,4 +343,41 @@
   flex-direction: column;
   justify-content: center;
   margin: 5vw;
+}
+.nav-bar-continer {
+  background-color: gray;
+  width: 100vw;
+}
+.nav-bar-continer ul li a {
+  color: blue;
+}
+.nav-bar-continer ul li {
+  display: inline-block;
+  text-decoration: underline;
+  padding-left: 1vw;
+  cursor: pointer;
+}
+
+.home-page {
+  width: 100vh;
+  margin-top: auto;
+  text-align: center;
+  align-self: center;
+}
+.product-links {
+  display: flex;
+  align-self: flex-start;
+  margin: 1vw;
+}
+.product-link {
+  margin: 1vw;
+}
+.productDetail {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+.productDetail button {
+  margin-top: 1vh;
+  width: 5vw;
 }
