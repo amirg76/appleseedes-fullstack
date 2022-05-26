@@ -32,6 +32,8 @@ import * as React_Data_Massaging from "./exercise/React_Data_Massaging";
 import * as Ex_14_1 from "./exercise/Ex_14_1";
 import * as Ex_14_2 from "./exercise/Ex_14_2";
 import * as Ex_16_1 from "./exercise/Ex_16_1";
+import * as To_do_app from "./exercise/To_do_app";
+import * as Ex_17_1 from "./exercise/Ex_17_1/Ex_17_1";
 
 const styleMain = {
   width: 450,
@@ -136,7 +138,6 @@ root.render(
     {/* <Ex_7_2.default>
       <Ex_7_2.ShowHide />
     </Ex_7_2.default> */}
-
     {/* <App /> */}
     {/* <Ex_7_3.default>
       <Ex_7_3.Increment />
@@ -144,7 +145,6 @@ root.render(
       <Ex_7_3.Decrement />
     </Ex_7_3.default> */}
     {/* ---------------------------------- */}
-
     {/* <Ex_8_1.default>
       <Ex_8_1.Color />
     </Ex_8_1.default> */}
@@ -171,7 +171,11 @@ root.render(
     {/* -------------------------------- */}
     {/* <Ex_14_2.default /> */}
     {/* --------------------------------- */}
-    <Ex_16_1.default />
+    {/* <Ex_16_1.default /> */}
+    {/* --------------------------------- */}
+    {/* <To_do_app.default /> */}
+    {/* ------------------------------- */}
+    <Ex_17_1.default />
   </React.StrictMode>
 );
 
