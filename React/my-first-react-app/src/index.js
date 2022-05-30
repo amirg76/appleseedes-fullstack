@@ -34,6 +34,10 @@ import * as Ex_14_2 from "./exercise/Ex_14_2";
 import * as Ex_16_1 from "./exercise/Ex_16_1";
 import * as To_do_app from "./exercise/To_do_app";
 import * as Ex_17_1 from "./exercise/Ex_17_1/Ex_17_1";
+import * as Ex_18_1 from "./exercise/Ex_18_1";
+import * as Ex_18_2 from "./exercise/Ex_18_2";
+import * as Ex_18_3 from "./exercise/Ex_18_3";
+import * as Ex_18_4 from "./exercise/Ex_18_4";
 
 const styleMain = {
   width: 450,
@@ -175,7 +179,15 @@ root.render(
     {/* --------------------------------- */}
     {/* <To_do_app.default /> */}
     {/* ------------------------------- */}
-    <Ex_17_1.default />
+    {/* <Ex_17_1.default /> */}
+    {/* -------------------------- */}
+    {/* <Ex_18_1.default /> */}
+    {/* ------------------------------- */}
+    {/* <Ex_18_2.default /> */}
+    {/* --------------------------------- */}
+    {/* <Ex_18_3.default /> */}
+    {/* -------------------------------- */}
+    <Ex_18_4.default />
   </React.StrictMode>
 );
 
