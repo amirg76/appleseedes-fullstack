@@ -42,6 +42,10 @@ import * as Ex_19_1 from "./exercise/Ex_19_1";
 import * as Ex_19_2 from "./exercise/Ex_19_2";
 import * as Ex_19_3 from "./exercise/Ex_19_3";
 import * as Ex_19_4 from "./exercise/Ex_19_4";
+import * as Ex_20_1 from "./exercise/Ex_20_1";
+import * as Ex_21_1 from "./exercise/Ex_21_1";
+import * as Ex_21_2 from "./exercise/Ex_21_2";
+import * as Ex_21_3 from "./exercise/Ex_21_3";
 
 const styleMain = {
   width: 450,
@@ -57,7 +61,8 @@ const styleMain = {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     {/* <Ex_2_2 /> */}
     {/* <Ex_3_1 /> */}
     {/* <title style={styleTitle}> */}
@@ -199,8 +204,17 @@ root.render(
     {/* ---------------------------------------- */}
     {/* <Ex_19_3.default /> */}
     {/* ------------------------------------------- */}
-    <Ex_19_4.default />
-  </React.StrictMode>
+    {/* <Ex_19_4.default /> */}
+    {/* ------------------------------------------ */}
+    {/* <Ex_20_1.default /> */}
+    {/* ---------------------------------------- */}
+    {/* <Ex_21_1.default /> */}
+    {/* -------------------------------------------- */}
+    {/* <Ex_21_2.default /> */}
+    {/* ---------------------------------------------- */}
+    {/* <Ex_21_3.default /> */}
+  </>
+  // {/* </React.StrictMode> */}
 );
 
 //  import ReactDOM from "react-dom";
