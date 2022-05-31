@@ -13,6 +13,8 @@ const MakeCheckBox = () => {
 
   const handleClick = (e) => {
     const idOfChecked = e.target.id;
+    console.log(e.target.checked);
+    // e.target.checked = "checked";
 
     setIsChecked({ isChecked: !isChecked });
 
@@ -53,8 +55,12 @@ const MakeCheckBox = () => {
                 <label class="container">
                   <input
                     onClick={handleClick}
+                    onChange={(event) =>
+                      setIsChecked(event.currentTarget.checked)
+                    }
                     type="checkbox"
-                    checked={isChecked ? "checked" : ""}
+                    checked={isChecked}
+                    // {isChecked ? "checked" : ""}
                     id={Object.keys(element)[0]}
                   ></input>
                   <span class="checkmark"></span>

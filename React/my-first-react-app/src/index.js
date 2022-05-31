@@ -38,6 +38,10 @@ import * as Ex_18_1 from "./exercise/Ex_18_1";
 import * as Ex_18_2 from "./exercise/Ex_18_2";
 import * as Ex_18_3 from "./exercise/Ex_18_3";
 import * as Ex_18_4 from "./exercise/Ex_18_4";
+import * as Ex_19_1 from "./exercise/Ex_19_1";
+import * as Ex_19_2 from "./exercise/Ex_19_2";
+import * as Ex_19_3 from "./exercise/Ex_19_3";
+import * as Ex_19_4 from "./exercise/Ex_19_4";
 
 const styleMain = {
   width: 450,
@@ -187,7 +191,15 @@ root.render(
     {/* --------------------------------- */}
     {/* <Ex_18_3.default /> */}
     {/* -------------------------------- */}
-    <Ex_18_4.default />
+    {/* <Ex_18_4.default /> */}
+    {/* ------------------------------------ */}
+    {/* <Ex_19_1.default /> */}
+    {/* -------------------------------------- */}
+    {/* <Ex_19_2.default /> */}
+    {/* ---------------------------------------- */}
+    {/* <Ex_19_3.default /> */}
+    {/* ------------------------------------------- */}
+    <Ex_19_4.default />
   </React.StrictMode>
 );
 
