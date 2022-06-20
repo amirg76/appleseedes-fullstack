@@ -1,0 +1,11 @@
+use findMyRestaurant
+
+db.restaurants
+
+db.restaurants.insertMany( [
+      { name: "aaa", address:[{city:"tel-aviv",street:"dfa",coordinates:[-76,561,40.777]}],cuisine:"pizza",kosher:true,reviews:[{date:1,score:78},{date:2,score:68},{date:3,score:98}] },
+      { name: "bbb", address:[{city:"haifa",street:"tyr",coordinates:[-78,565,40.877]}],cuisine:"hamburger",kosher:false,reviews:[{date:4,score:77},{date:5,score:68},{date:6,score:58}] },
+      { name: "ccc", address:[{city:"Jerusalem",street:"nbm",coordinates:[-37,364,40.377]}],cuisine:"pizza",kosher:true,reviews:[{date:7,score:86},{date:8,score:88},{date:9,score:38}] },
+      { name: "ddd", address:[{city:"tel-aviv",street:"lkj",coordinates:[-27,264,40.277]}],cuisine:"pasta",kosher:false,reviews:[{date:10,score:55},{date:11,score:38},{date:12,score:89}] },
+      { name: "eee", address:[{city:"haifa",street:"wrq",coordinates:[-17,164,40.177]}],cuisine:"pasta",kosher:true,reviews:[{date:13,score:47},{date:14,score:58},{date:15,score:78}] },
+   ] );
