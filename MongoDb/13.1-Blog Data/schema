@@ -1,0 +1,70 @@
+const users = [
+  {
+    id: mongodb.ObjectId,
+    name: "amir",
+    email:"aaa@yyy.com",
+    posts: [],
+    comments: [],
+  },
+  {
+    id: mongodb.ObjectId,
+    name: "keter",
+    email:"bbb@ttt.com",
+    posts: [],
+    comments: [],
+  },
+  {
+    id: mongodb.ObjectId,
+    name: "sammer",
+    email:"ccc@ppp.com"
+    posts: [],
+    comments: [],
+  },
+];
+const posts = [
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    title: "I love reacet",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus ligula, consectetur nec vehicula non.",
+    comments: [],
+  },
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    title: "I love java script",
+    content:
+      " quis volutpat velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non blandit purus, ",
+    comments: [],
+  },
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    title: "I love css",
+    content:
+      "a condimentum nisi,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat pulvinar ante",
+    comments: [],
+  },
+];
+
+const comments = [
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    post_id: mongodb.ObjectId,
+    comment: "love it",
+  },
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    post_id: mongodb.ObjectId,
+    comment: "hate it",
+  },
+  {
+    id: mongodb.ObjectId,
+    user_id: mongodb.ObjectId,
+    post_id: mongodb.ObjectId,
+    comment: "like it",
+  },
+];
