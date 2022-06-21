@@ -21,6 +21,12 @@ MongoClient.connect(
         $push: {
           posts: ObjectID("62b06d29b7b1c4295652812c"),
         },
+      },
+      (error, result) => {
+        if (error) {
+          return console.log("Unable to push post");
+        }
+        console.log(result.ops);
       }
     );
     db.collection("users").updateOne(
